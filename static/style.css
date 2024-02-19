@@ -1,0 +1,205 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #272b34; */
+    font-family: 'Khula', sans-serif;
+    font-weight: 300;
+    /* color: white; */
+    /* line-height: 1em; */
+    margin: 0;
+    padding: 2em 1em;
+}
+
+img {
+max-width: 100%; max-height: 100%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+div {
+    width: 100%-content;
+    height: auto;
+    word-wrap:break-word;
+ }
+
+.in { 
+    text-indent: 30px; 
+    word-wrap:break-word;
+}
+
+table {
+table-layout: fixed;
+width: 100%;
+}
+
+table tr {
+border-bottom: 1px solid #e9e9e9;
+}
+
+table thead td,
+th {
+border-left: 1px solid #f2f2f2;
+border-right: 1px solid #d5d5d5;
+/* background: #ddd url("../images/sprites4.png") repeat-x scroll 0 100%; */
+font-weight: bold;
+text-align: center;
+}
+
+table tr td,
+th {
+border: 1px solid #D5D5D5;
+padding: 15px;
+word-break: keep-all;
+}
+
+table th {
+    background: #dedede;
+    }
+
+table tr:hover {
+background: #f5e9db;
+}
+
+table tr ul.actions {
+margin: 0;
+}
+
+table tr ul.actions li {
+display: inline;
+margin-right: 5px;
+}
+
+table tr td:nth-child(1) { /* I don't think they are 0 based */
+text-align: center;
+}
+
+table tr td:nth-child(2) {
+text-align: center;
+}
+
+table tr td:nth-child(3) {
+text-align: center;
+}
+
+li {
+    line-height: 130% !important;
+    word-wrap:break-word;
+    margin-bottom: 0.5em;
+    word-break:keep-all;
+}
+
+p {
+    line-height: 120% !important;
+    word-wrap:break-word;
+    margin-bottom: 0.5em; 
+    margin-top: 0em;
+    word-break:keep-all;
+}
+    
+q {
+    line-height: 140%;
+    word-wrap:break-word;
+}
+
+a {
+    color:black;
+}
+
+h1 {
+    font-size:45px;
+    text-align:center;
+    border-bottom: 1px solid gray;
+    margin:0;
+    padding:20px;
+    word-break:keep-all;
+}
+
+ol{
+    border-right:1px solid gray;
+    width: fit-content;
+    margin:0;
+    padding:20px;
+    display:inline-block;
+    /* max-width: 100%; */
+    word-break:keep-all;
+}
+
+#grid{
+    display: grid;
+    /* grid-template-columns: 150px 1fr; */
+    grid-template-columns: auto auto;
+
+}
+
+#grid ol{
+    padding-left:33px;
+}
+
+#grid #article{
+    padding-left:25px;
+}
+
+@media (max-width:800px){
+    #grid{
+        display: block;
+    }
+    ol{
+        border-right:none;
+    }
+    h1 {
+        border-bottom:none;
+    }
+}
+
+
+#div_home{
+    margin:auto;
+    width:800px;
+    }
+
+#div_top{
+    width:100%;
+    height:100px;
+    line-height: 100px; /* height 와 동일하게 설정하면 글자 수직 가운데 정렬*/
+    background-color:#333333;
+    color: #ffffff;
+    text-align:center;
+    vertical-align: middle; /*이미지 인 경우 가운데 정렬*/
+    }
+    .logo-box{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    }
+    .logo{
+    width:40px;
+    height: 40px;
+    } 
+
+#submit_button {
+    width: 6em;
+    height: 2em;
+    text-align: center;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
